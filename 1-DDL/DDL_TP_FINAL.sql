@@ -519,6 +519,7 @@ CREATE TABLE STG.LK_ORDERS
 	AUD_ACTION varchar(50) NOT NULL
 );
 
+
 CREATE TABLE DWH.LK_ORDERS
 (
 	Ord_Order_id int IDENTITY(1,1) PRIMARY KEY,
@@ -528,7 +529,7 @@ CREATE TABLE DWH.LK_ORDERS
 	Ord_Order_Date date NOT NULL,
 	Ord_Required_Date date NULL,
 	Ord_Shipped_Date date NULL,
-	Ord_Ship_Via varchar(50) NULL,
+	Ord_Ship_Via int NOT NULL,
 	Ord_Freight varchar(50) NULL,
 	Ord_Ship_name varchar(50) NULL,
 	Ord_Ship_Address varchar(50) NULL,
@@ -542,7 +543,8 @@ CREATE TABLE DWH.LK_ORDERS
 	CONSTRAINT FK_Order_Customer FOREIGN KEY(Ord_Customer_id) REFERENCES DWH.LK_CUSTOMERS (Cus_Customer_id),
 	CONSTRAINT FK_Order_Employee FOREIGN KEY(Ord_Employee_id) REFERENCES DWH.LK_EMPLOYEES (Emp_Employee_id),
 	CONSTRAINT FK_Order_Region FOREIGN KEY(Ord_Ship_Region_Id) REFERENCES DWH.LK_REGIONS (Region_Id),
-	CONSTRAINT FK_Order_Country FOREIGN KEY(Ord_Ship_Country_id) REFERENCES DWH.LK_COUNTRIES (Ctry_Country_Id)
+	CONSTRAINT FK_Order_Country FOREIGN KEY(Ord_Ship_Country_id) REFERENCES DWH.LK_COUNTRIES (Ctry_Country_Id),
+	CONSTRAINT FK_OrderShipVia FOREIGN KEY(Ord_Ship_Via) REFERENCES DWH.LK_SHIPPERS (Ship_Shipper_id),
 );
 
 CREATE TABLE TMP.ORDERS_DETAILS
@@ -584,9 +586,37 @@ CREATE TABLE DWH.LK_ORDERS_DETAILS
 	CONSTRAINT FK_OrderDet_Product FOREIGN KEY(OrdDet_Product_id) REFERENCES DWH.LK_PRODUCTS (prod_product_id)
 );
 
+CREATE TABLE TMP.SHIPPERS
+(
+	Shipper_CD varchar (10) NULL,
+	Company_Name varchar(50) NULL,
+	Phone varchar(50) NULL
+);
+
+CREATE TABLE STG.LK_SHIPPERS
+(
+	Ship_Shipper_CD varchar (10) NOT NULL,
+	Ship_Company_Name varchar(50) NOT NULL,
+	Ship_Phone varchar(50) NULL,
+	AUD_INSERT_DT datetime NOT NULL,
+	AUD_USER_INSERT varchar(50) NOT NULL,
+	AUD_ACTION varchar(50) NOT NULL
+);
+
+CREATE TABLE DWH.LK_SHIPPERS
+(
+	Ship_Shipper_id int IDENTITY(1,1) PRIMARY KEY,
+	Ship_Shipper_CD varchar (10) NOT NULL,
+	Ship_Company_Name varchar(50) NOT NULL,
+	Ship_Phone varchar(50) NULL,
+	AUD_INSERT_DT datetime NOT NULL,
+	AUD_USER_INSERT varchar(50) NOT NULL,
+	AUD_ACTIVE_FLAG int NOT NULL
+);
+
 ------------------------------------------------------------------------------------
 -- STEP 3: Creación de Tablas de Auditoria
-
+ 
 CREATE TABLE LOG.AUDIT_PROCESS_DATE
 (
 	AUDPD_Id int IDENTITY(1,1) PRIMARY KEY,
@@ -595,7 +625,8 @@ CREATE TABLE LOG.AUDIT_PROCESS_DATE
 	AUDPD_END_Data DATETIME NULL,
 	AUDPD_Status_ID INT NOT NULL,
 	AUDPD_Observations VARCHAR(100) NULL,
-	CONSTRAINT FK_Status_Process FOREIGN KEY(AUDPD_Status_ID) REFERENCES LOG.AUDIT_STATUS_PROCESS (AUDSP_Status_Id)
+	CONSTRAINT FK_Status_Process FOREIGN KEY(AUDPD_Status_ID) REFERENCES LOG.AUDIT_STATUS_PROCESS (AUDSP_Status_Id),
+	CONSTRAINT FK_Status_Job FOREIGN KEY(AUDPD_JobId) REFERENCES LOG.AUDIT_JOBS (AUDJOB_Job_Id),
 );
 
 
@@ -606,4 +637,28 @@ CREATE TABLE LOG.AUDIT_STATUS_PROCESS
 	AUDPD_INSERT_DT datetime NOT NULL,
 	AUDPD_USER_INSERT varchar(50) NOT NULL,
 	AUDPD_ACTIVE_FLAG int NOT NULL
+);
+
+
+
+CREATE TABLE LOG.AUDIT_JOBS
+(
+	AUDJOB_Job_Id int IDENTITY(1,1) PRIMARY KEY,
+	AUDJOB_Job_Name Varchar(50) NOT NULL,
+	AUDPD_INSERT_DT datetime NOT NULL,
+	AUDPD_USER_INSERT varchar(50) NOT NULL,
+	AUDPD_ACTIVE_FLAG int NOT NULL
+);
+
+
+CREATE TABLE LOG.DATA_QUALITY_CHECKS (
+    AUDDQ_DQ_ID INT IDENTITY(1,1) PRIMARY KEY,
+    AUDDQ_ENTITY_NAME VARCHAR(100) NOT NULL,          -- Nombre de la tabla o entidad (ej: CLIENTES)
+    AUDDQ_TOTAL_RECORDS INT NULL,                           -- Total de registros analizados
+    AUDDQ_INVALID_RECORDS INT NULL,                         -- Registros con problemas
+    AUDDQ_PERCENT_INVALID DECIMAL(5,2) NULL,                -- % inválidos
+    AUDDQ_CHECK_DATE DATETIME NOT NULL DEFAULT GETDATE(),   -- Fecha de evaluación
+    AUDDQ_JOB_ID INT NULL,                                  -- Referencia al job que corrió el chequeo (si aplica)
+    AUDDQ_OBSERVATIONS VARCHAR(255) NULL,                   -- Detalles adicionales
+    CONSTRAINT FK_DQ_JOB FOREIGN KEY (AUDDQ_JOB_ID) REFERENCES LOG.AUDIT_JOBS (AUDJOB_Job_Id)
 );
