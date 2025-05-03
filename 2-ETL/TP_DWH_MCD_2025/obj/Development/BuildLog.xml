@@ -2,13 +2,28 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>TP_DWH_MCD_2025</Name>
-    <LastWriteTime>2025-05-02T01:37:28.318443Z</LastWriteTime>
+    <LastWriteTime>2025-05-03T03:51:01.7735941Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>TMP_Shippers.dtsx</Name>
       <LastWriteTime>2025-05-02T01:49:58.4069618Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>TMP_Regions.dtsx</Name>
+      <LastWriteTime>2025-05-02T20:29:12.7706328Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>TMP_Territories.dtsx</Name>
+      <LastWriteTime>2025-05-02T20:46:02.4416923Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>TMP_Categories.dtsx</Name>
+      <LastWriteTime>2025-05-03T03:50:53.0601777Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
