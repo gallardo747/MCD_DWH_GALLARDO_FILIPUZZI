@@ -1,0 +1,2346 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/1/2025 9:00:35 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-IAI1KNV"
+  DTS:CreatorName="DESKTOP-IAI1KNV\Ezequiel"
+  DTS:DTSID="{C3087DF8-C3D8-46B2-8306-056D30DDEFED}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LocaleID="11274"
+  DTS:ObjectName="TMP_Employee"
+  DTS:PackageType="5"
+  DTS:VersionBuild="51"
+  DTS:VersionGUID="{35861DF5-063B-4533-AEE5-4DA77D455045}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Employee]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{2A19C3CB-1C87-4D0C-A979-DE1A1A6CAEE1}"
+      DTS:ObjectName="Employee">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="11274"
+          DTS:HeaderRowDelimiter="_x002C_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\Ezequiel\Mi unidad\Maestria\Ciencia de datos\AUSTRAL\16-INTRO_DATA_WAREHOUSING\TPFINAL\DESARROLLO\2-ETL\INPUTS\ingesta1\ingesta1\employees.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="employeeID"
+              DTS:DTSID="{ADE139BC-FC2C-42EC-A91F-BDBF85F5417C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="lastName"
+              DTS:DTSID="{A2BEDA19-826A-43E4-9F7B-FAA7224D4909}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="firstName"
+              DTS:DTSID="{33FC8377-A893-419F-85DC-D70B5C28F990}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="title"
+              DTS:DTSID="{1E788A02-B872-488B-BD68-87B2DB82A0FA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="titleOfCourtesy"
+              DTS:DTSID="{6E5D9D44-1B7F-483F-A89A-6EC08091FA55}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="birthDate"
+              DTS:DTSID="{B2E2776F-1693-4839-B99C-887C227B498F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="hireDate"
+              DTS:DTSID="{22C33057-C055-48E8-A76F-C038B3DCC330}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="address"
+              DTS:DTSID="{E0D23538-B56D-40FC-AE35-0EF3E4BF8797}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="city"
+              DTS:DTSID="{4D52CCC6-784C-4BBA-936C-B3E2CB3594FA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="region"
+              DTS:DTSID="{29B51912-6709-4EFF-A05C-254C2461C1E7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="postalCode"
+              DTS:DTSID="{5B4F74C8-466E-4CE6-89E3-B9E42462CB64}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country"
+              DTS:DTSID="{DF638021-5924-4DCE-B93F-4DCF475BAD40}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="homePhone"
+              DTS:DTSID="{DFC3D7C3-98B9-4630-95EC-22F3D3F7D5F7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="extension"
+              DTS:DTSID="{2DBF2EE7-0C5A-4295-A5BC-5D577F114F32}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="photo"
+              DTS:DTSID="{C5AF0E5E-CFFE-46AC-916D-71E5ADF4A685}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="notes"
+              DTS:DTSID="{23253E26-CA51-43A0-AAA5-25247B0E201C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="reportsTo"
+              DTS:DTSID="{681649CD-7644-4F14-8964-A9FB74C39E52}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="photoPath"
+              DTS:DTSID="{0B43EA6E-1B92-4233-A7FB-169E4917C811}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Employee_LogError]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{0BE26150-51C5-4207-9DDD-1B3014EBEE96}"
+      DTS:ObjectName="Employee_LogError">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="11274"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\Ezequiel\Mi unidad\Maestria\Ciencia de datos\AUSTRAL\16-INTRO_DATA_WAREHOUSING\TPFINAL\DESARROLLO\2-ETL\OUTPUT_ERROR_LOGS\TMP_Employee_ErrorLogs.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="address"
+              DTS:DTSID="{EEE9B513-2F00-4112-81FB-B865450C9BD4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="city"
+              DTS:DTSID="{3295C82F-3397-4734-ABCD-B35856F0BEE7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="region"
+              DTS:DTSID="{DB2451CE-AB9F-4722-A0EA-73EB539EDBDF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="postalCode"
+              DTS:DTSID="{DC6FAC5F-0A77-4327-8740-BA3F9C5C9277}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country"
+              DTS:DTSID="{F12513A7-79C6-4888-87CF-8C4CE558A17D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="employeeID"
+              DTS:DTSID="{6D29FA2E-243A-4B38-8701-9782052A8304}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="lastName"
+              DTS:DTSID="{11A6E555-A87D-44F3-BCC4-B6C4E72AB424}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="firstName"
+              DTS:DTSID="{7B7F380A-A509-469C-BA85-ADB569AF694F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="title"
+              DTS:DTSID="{853A01B1-8A03-41F9-B051-DFDD5E2B58FD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="titleOfCourtesy"
+              DTS:DTSID="{C32FF8AE-AED9-4AF8-A404-D643699B9C10}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="birthDate"
+              DTS:DTSID="{26A2CB43-127B-4401-94AB-40D7173C9358}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="hireDate"
+              DTS:DTSID="{651ED2C1-2C53-4C71-9D36-65944EE302B5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="homePhone"
+              DTS:DTSID="{42F3BBA2-693D-4843-8AB4-80B30AB63EA6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="extension"
+              DTS:DTSID="{4F935410-6244-4A8F-88C7-C757D172CE7D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="photo"
+              DTS:DTSID="{26817496-A75C-4B4C-8078-FDA2877DBF6C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="notes"
+              DTS:DTSID="{D443F551-7FF6-4A72-8058-30F8342A3A28}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="reportsTo"
+              DTS:DTSID="{123B6BE0-08DC-4339-A838-F79BE93E57CD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="photoPath"
+              DTS:DTSID="{6ED834F9-3EA6-4458-A6A3-47E5AE5AACBA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{31D97929-A014-4F4B-AB99-2E1D37F12FAD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{48574572-2F02-44AA-BB52-992D3B313157}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{5A72D7C5-8A86-49C1-A1E7-98B7DAFB170E}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="ErroresRowCount">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{4F53CDFA-B48E-40D2-A15B-98D9F4F3C159}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[System::PackageName]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="JobName">
+      <DTS:VariableValue
+        DTS:DataType="8">TMP_Employee</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\END LOG OK"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{DE82584E-5CEE-41E7-B64F-CA11B6F4BBF7}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="END LOG OK"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{98DA7ED2-5B74-40EC-A327-FBA15428B65D}"
+          SQLTask:SqlStatementSource="EXEC [LOG].[DWH_End_Log] ?, 'FINISH';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="@JobName"
+            SQLTask:DtsVariableName="User::JobName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\ERROR LOG"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{D8536B85-6ACB-4144-8E38-DD6C58245272}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ERROR LOG"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{98DA7ED2-5B74-40EC-A327-FBA15428B65D}"
+          SQLTask:SqlStatementSource="EXEC [LOG].[DWH_End_Log] ?, 'ABORT';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="NewParameterName"
+            SQLTask:DtsVariableName="User::JobName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\FINISHED WITH WARNINGS LOG"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{0584D82F-5162-4C39-8A64-883CB37D9F43}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="FINISHED WITH WARNINGS LOG"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{98DA7ED2-5B74-40EC-A327-FBA15428B65D}"
+          SQLTask:SqlStatementSource="EXEC [LOG].[DWH_End_Log] ?, 'ABORT';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="NewParameterName"
+            SQLTask:DtsVariableName="User::JobName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\START LOG"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{E40FA524-7403-4FC6-BFAF-69E115F5AFD6}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="START LOG"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{98DA7ED2-5B74-40EC-A327-FBA15428B65D}"
+          SQLTask:SqlStatementSource="EXEC [LOG].[DWH_Start_Log] ?;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="NewParameterName"
+            SQLTask:DtsVariableName="User::JobName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\TMP_EMPLOYEE"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{4BACFBDE-D287-4284-B380-65DD627112A1}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="TMP_EMPLOYEE"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Origen de archivo plano"
+              localeId="11274"
+              name="CSV EMPLOYEE"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si las columnas de longitud cero se tratan como NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Employee]"
+                  connectionManagerRefId="Package.ConnectionManagers[Employee]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano]"
+                  name="Salida de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[address]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[address]"
+                      length="100"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[address]"
+                      name="address"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[city]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[city]"
+                      length="50"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[city]"
+                      name="city"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[region]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[region]"
+                      length="50"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[region]"
+                      name="region"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[postalCode]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[postalCode]"
+                      length="50"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[postalCode]"
+                      name="postalCode"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[country]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[country]"
+                      length="50"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[country]"
+                      name="country"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[employeeID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[employeeID]"
+                      length="50"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[employeeID]"
+                      name="employeeID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[lastName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[lastName]"
+                      length="50"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[lastName]"
+                      name="lastName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[firstName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[firstName]"
+                      length="50"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[firstName]"
+                      name="firstName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[title]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[title]"
+                      length="50"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[title]"
+                      name="title"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[titleOfCourtesy]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[titleOfCourtesy]"
+                      length="50"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[titleOfCourtesy]"
+                      name="titleOfCourtesy"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[birthDate]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[birthDate]"
+                      length="50"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[birthDate]"
+                      name="birthDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[hireDate]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[hireDate]"
+                      length="50"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[hireDate]"
+                      name="hireDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[homePhone]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[homePhone]"
+                      length="50"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[homePhone]"
+                      name="homePhone"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[extension]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[extension]"
+                      length="10"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[extension]"
+                      name="extension"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[photo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[photo]"
+                      length="1000"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[photo]"
+                      name="photo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[notes]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[notes]"
+                      length="1000"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[notes]"
+                      name="notes"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[reportsTo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[reportsTo]"
+                      length="50"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[reportsTo]"
+                      name="reportsTo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[photoPath]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[photoPath]"
+                      length="50"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[photoPath]"
+                      name="photoPath"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[address]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="address" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[city]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="city" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[region]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="region" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[postalCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="postalCode" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[country]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="country" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[employeeID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="employeeID" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[lastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="lastName" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[firstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="firstName" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[title]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="title" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[titleOfCourtesy]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="titleOfCourtesy" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[birthDate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="birthDate" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[hireDate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="hireDate" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[homePhone]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="homePhone" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[extension]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="extension" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[photo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="photo" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[notes]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="notes" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[reportsTo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="reportsTo" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].ExternalColumns[photoPath]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="photoPath" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de error de origen de archivo plano]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Columna de salida de error de origen de archivo plano"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      name="Columna de salida de error de origen de archivo plano" />
+                    <outputColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\TMP_EMPLOYEE\EMPLOYEE"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino de OLE DB"
+              name="EMPLOYEE"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[TMP].[EMPLOYEES]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadMaxInsertCommitSize">1000</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\TMP_EMPLOYEE\EMPLOYEE.Connections[OleDbConnection]"
+                  connectionManagerID="{98DA7ED2-5B74-40EC-A327-FBA15428B65D}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Conection_DWH]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB]"
+                  errorOrTruncationOperation="Insertar"
+                  errorRowDisposition="RedirectRow"
+                  hasSideEffects="true"
+                  name="Entrada de destino de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].Columns[address]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="address"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[address]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[address]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].Columns[city]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="city"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[city]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[city]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].Columns[employeeID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="employeeID"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[Employee_CD]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[employeeID]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].Columns[lastName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="lastName"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[Last_name]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[lastName]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].Columns[firstName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="firstName"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[First_name]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[firstName]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].Columns[title]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="title"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[title]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[title]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].Columns[titleOfCourtesy]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="titleOfCourtesy"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[title_of_courtesy]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[titleOfCourtesy]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].Columns[birthDate]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="birthDate"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[birth_date]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[birthDate]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].Columns[hireDate]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="hireDate"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[hire_date]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[hireDate]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].Columns[region]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="region"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[region_cd]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[region]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].Columns[postalCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="postalCode"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[postal_Code]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[postalCode]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].Columns[extension]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="extension"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[extension]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[extension]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].Columns[homePhone]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="homePhone"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[home_phone]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[homePhone]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].Columns[photo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="photo"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[photo]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[photo]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].Columns[notes]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="notes"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[notes]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[notes]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].Columns[reportsTo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="reportsTo"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[report_to]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[reportsTo]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].Columns[photoPath]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="photoPath"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[photo_path]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[photoPath]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[address]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="address" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[city]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="city" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[Employee_CD]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Employee_CD" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[Last_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Last_name" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[First_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="First_name" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[title]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="title" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[title_of_courtesy]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="title_of_courtesy" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[birth_date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="birth_date" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[hire_date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="hire_date" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[region_cd]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="region_cd" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[postal_Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="postal_Code" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[home_phone]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="home_phone" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[extension]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="extension" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[photo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="photo" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[notes]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="notes" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[report_to]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="report_to" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB].ExternalColumns[photo_path]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="photo_path" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\TMP_EMPLOYEE\EMPLOYEE.Outputs[Salida de error de destino de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de OLE DB"
+                  synchronousInputId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\TMP_EMPLOYEE\EMPLOYEE.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\TMP_EMPLOYEE\EMPLOYEE.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\TMP_EMPLOYEE\EMPLOYEE.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\TMP_EMPLOYEE\Filas Con ERROR"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Destino de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Destino de archivo plano"
+              localeId="11274"
+              name="Filas Con ERROR"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si los datos sobrescriben el archivo de destino o se anexan al mismo."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Especifica el texto para escribir en el archivo de destino antes de escribir ningún dato."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="Cuando el calificador de texto está habilitado, especifica si este contendrá secuencias de escape o no en los datos escritos en el archivo de destino."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Employee_LogError]"
+                  connectionManagerRefId="Package.ConnectionManagers[Employee_LogError]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano]"
+                  hasSideEffects="true"
+                  name="Entrada de destino de archivo plano">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].Columns[address]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="address"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[address]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[address]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].Columns[city]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="city"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[city]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[city]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].Columns[region]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="region"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[region]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[region]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].Columns[postalCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="postalCode"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[postalCode]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[postalCode]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].Columns[country]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="country"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[country]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[country]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[ErrorCode]"
+                      lineageId="Package\TMP_EMPLOYEE\EMPLOYEE.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].Columns[ErrorColumn]"
+                      cachedDataType="i4"
+                      cachedName="ErrorColumn"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[ErrorColumn]"
+                      lineageId="Package\TMP_EMPLOYEE\EMPLOYEE.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].Columns[photoPath]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="photoPath"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[photoPath]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[photoPath]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].Columns[reportsTo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="reportsTo"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[reportsTo]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[reportsTo]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].Columns[notes]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="notes"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[notes]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[notes]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].Columns[photo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="photo"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[photo]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[photo]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].Columns[extension]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="extension"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[extension]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[extension]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].Columns[hireDate]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="hireDate"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[hireDate]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[hireDate]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].Columns[homePhone]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="homePhone"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[homePhone]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[homePhone]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].Columns[birthDate]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="birthDate"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[birthDate]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[birthDate]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].Columns[titleOfCourtesy]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="titleOfCourtesy"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[titleOfCourtesy]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[titleOfCourtesy]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].Columns[title]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="title"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[title]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[title]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].Columns[firstName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="firstName"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[firstName]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[firstName]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].Columns[lastName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="lastName"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[lastName]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[lastName]" />
+                    <inputColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].Columns[employeeID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="employeeID"
+                      externalMetadataColumnId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[employeeID]"
+                      lineageId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano].Columns[employeeID]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[ErrorCode]"
+                      dataType="i4"
+                      name="ErrorCode" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[ErrorColumn]"
+                      dataType="i4"
+                      name="ErrorColumn" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[address]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="address" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[city]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="city" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[region]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="region" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[postalCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="postalCode" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[country]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="country" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[employeeID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="employeeID" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[lastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="lastName" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[firstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="firstName" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[title]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="title" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[titleOfCourtesy]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="titleOfCourtesy" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[birthDate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="birthDate" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[hireDate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="hireDate" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[homePhone]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="homePhone" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[extension]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="extension" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[photo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="photo" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[notes]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="notes" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[reportsTo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="reportsTo" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[photoPath]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="photoPath" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\TMP_EMPLOYEE\Recuento de filas"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Recuento de filas;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+              description="Cuenta las filas a medida que pasan por un flujo de datos. Por ejemplo, se usa el número de filas procesadas para determinar si deben o no realizarse operaciones de limpieza o actualizar el texto de un mensaje de correo electrónico para comunicar el estado de procesamiento."
+              name="Recuento de filas">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el recuento de filas."
+                  name="VariableName">User::ErroresRowCount</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\TMP_EMPLOYEE\Recuento de filas.Inputs[Entrada de Recuento de filas 1]"
+                  hasSideEffects="true"
+                  name="Entrada de Recuento de filas 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\TMP_EMPLOYEE\Recuento de filas.Outputs[Salida de Recuento de filas 1]"
+                  name="Salida de Recuento de filas 1"
+                  synchronousInputId="Package\TMP_EMPLOYEE\Recuento de filas.Inputs[Entrada de Recuento de filas 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\TMP_EMPLOYEE.Paths[Salida de error de destino de OLE DB]"
+              endId="Package\TMP_EMPLOYEE\Recuento de filas.Inputs[Entrada de Recuento de filas 1]"
+              name="Salida de error de destino de OLE DB"
+              startId="Package\TMP_EMPLOYEE\EMPLOYEE.Outputs[Salida de error de destino de OLE DB]" />
+            <path
+              refId="Package\TMP_EMPLOYEE.Paths[Salida de origen de archivo plano]"
+              endId="Package\TMP_EMPLOYEE\EMPLOYEE.Inputs[Entrada de destino de OLE DB]"
+              name="Salida de origen de archivo plano"
+              startId="Package\TMP_EMPLOYEE\CSV EMPLOYEE.Outputs[Salida de origen de archivo plano]" />
+            <path
+              refId="Package\TMP_EMPLOYEE.Paths[Salida de Recuento de filas 1]"
+              endId="Package\TMP_EMPLOYEE\Filas Con ERROR.Inputs[Entrada de destino de archivo plano]"
+              name="Salida de Recuento de filas 1"
+              startId="Package\TMP_EMPLOYEE\Recuento de filas.Outputs[Salida de Recuento de filas 1]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\TRUNCATE TMP EMPLOYEE"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{48FCCF3F-A97A-446E-8756-AD46AF13EA33}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="TRUNCATE TMP EMPLOYEE"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{98DA7ED2-5B74-40EC-A327-FBA15428B65D}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE TMP.EMPLOYEES;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{327B3496-D859-42BB-80E4-BF7356F19BD4}"
+      DTS:From="Package\TRUNCATE TMP EMPLOYEE"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\TMP_EMPLOYEE" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{62EF44CD-D738-40A9-B77B-D518CAD11B6B}"
+      DTS:From="Package\START LOG"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 1"
+      DTS:To="Package\TRUNCATE TMP EMPLOYEE" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{9398BFF4-2FAE-458D-B720-DAFA29E2DA48}"
+      DTS:EvalOp="1"
+      DTS:Expression="@[User::ErroresRowCount]&lt;1"
+      DTS:From="Package\TMP_EMPLOYEE"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 2"
+      DTS:To="Package\END LOG OK" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{C1E0AAA5-2FD7-428C-AFB0-D5B5C8B14AF6}"
+      DTS:From="Package\TMP_EMPLOYEE"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 3"
+      DTS:To="Package\ERROR LOG"
+      DTS:Value="1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{A39087A0-953B-47E7-95C1-7403993B9650}"
+      DTS:From="Package\TRUNCATE TMP EMPLOYEE"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 4"
+      DTS:To="Package\ERROR LOG"
+      DTS:Value="1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{F8CB9E5D-B6EE-45B2-B647-620E325632D3}"
+      DTS:From="Package\END LOG OK"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 5"
+      DTS:To="Package\ERROR LOG"
+      DTS:Value="1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{9B3087F1-238F-4CDB-BE40-1A379C1EDE07}"
+      DTS:From="Package\START LOG"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 6"
+      DTS:To="Package\ERROR LOG"
+      DTS:Value="1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 7]"
+      DTS:CreationName=""
+      DTS:DTSID="{163783FB-B054-45BB-A5DA-C819DB9A9AE1}"
+      DTS:EvalOp="1"
+      DTS:Expression="@[User::ErroresRowCount]&gt;0"
+      DTS:From="Package\TMP_EMPLOYEE"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 7"
+      DTS:To="Package\FINISHED WITH WARNINGS LOG" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="147,42"
+          Id="Package\END LOG OK"
+          TopLeft="268,298" />
+        <NodeLayout
+          Size="145,42"
+          Id="Package\ERROR LOG"
+          TopLeft="455,140" />
+        <NodeLayout
+          Size="251,42"
+          Id="Package\FINISHED WITH WARNINGS LOG"
+          TopLeft="0,301" />
+        <NodeLayout
+          Size="141,42"
+          Id="Package\START LOG"
+          TopLeft="276,0" />
+        <NodeLayout
+          Size="169,42"
+          Id="Package\TMP_EMPLOYEE"
+          TopLeft="259,208" />
+        <NodeLayout
+          Size="228,42"
+          Id="Package\TRUNCATE TMP EMPLOYEE"
+          TopLeft="234,104" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="348,146">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-31.3333333333333,62"
+              Start="0,0"
+              End="-31.3333333333333,54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.8511137162954" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.8511137162954"
+                    Point2="0,36.8511137162954"
+                    Point3="-4,36.8511137162954" />
+                  <mssgle:LineSegment
+                    End="-27.3333333333333,36.8511137162954" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-27.3333333333333,36.8511137162954"
+                    Point2="-31.3333333333333,36.8511137162954"
+                    Point3="-31.3333333333333,40.8511137162954" />
+                  <mssgle:LineSegment
+                    End="-31.3333333333333,54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 1]"
+          TopLeft="324.333333333333,42">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="23.6666666666667,62"
+              Start="0,0"
+              End="23.6666666666667,54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.2173913043478" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.2173913043478"
+                    Point2="0,25.2173913043478"
+                    Point3="4,25.2173913043478" />
+                  <mssgle:LineSegment
+                    End="19.6666666666667,25.2173913043478" />
+                  <mssgle:CubicBezierSegment
+                    Point1="19.6666666666667,25.2173913043478"
+                    Point2="23.6666666666667,25.2173913043478"
+                    Point3="23.6666666666667,29.2173913043478" />
+                  <mssgle:LineSegment
+                    End="23.6666666666667,54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 2]"
+          TopLeft="370.333333333333,250">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-52,48"
+              Start="0,0"
+              End="-52,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.958547595682" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.958547595682"
+                    Point2="0,23.958547595682"
+                    Point3="-4,23.958547595682" />
+                  <mssgle:LineSegment
+                    End="-48,23.958547595682" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-48,23.958547595682"
+                    Point2="-52,23.958547595682"
+                    Point3="-52,27.958547595682" />
+                  <mssgle:LineSegment
+                    End="-52,40.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-34,28.958547595682,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 3]"
+          TopLeft="370.333333333333,208">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="180,-26"
+              Start="0,0"
+              End="180,-18.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-8.97517208451041" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-8.97517208451041"
+                    Point2="0,-12.9751720845104"
+                    Point3="4,-12.9751720845104" />
+                  <mssgle:LineSegment
+                    End="176,-12.9751720845104" />
+                  <mssgle:CubicBezierSegment
+                    Point1="176,-12.9751720845104"
+                    Point2="180,-12.9751720845104"
+                    Point3="180,-16.9751720845104" />
+                  <mssgle:LineSegment
+                    End="180,-18.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="78.47130859375,-7.97517208451041,23.0573828125,9.421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 4]"
+          TopLeft="462,117.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="88.3333333333334,22.5"
+              Start="0,0"
+              End="88.3333333333334,15">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="84.3333333333334,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="84.3333333333334,0"
+                    Point2="88.3333333333334,0"
+                    Point3="88.3333333333334,4" />
+                  <mssgle:LineSegment
+                    End="88.3333333333334,15" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="76.8046419270834,-15.421875,23.0573828125,9.421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 5]"
+          TopLeft="364.666666666667,298">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="185.666666666667,-116"
+              Start="0,0"
+              End="185.666666666667,-108.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-53.9894059089456" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-53.9894059089456"
+                    Point2="0,-57.9894059089456"
+                    Point3="4,-57.9894059089456" />
+                  <mssgle:LineSegment
+                    End="181.666666666667,-57.9894059089456" />
+                  <mssgle:CubicBezierSegment
+                    Point1="181.666666666667,-57.9894059089456"
+                    Point2="185.666666666667,-57.9894059089456"
+                    Point3="185.666666666667,-61.9894059089456" />
+                  <mssgle:LineSegment
+                    End="185.666666666667,-108.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="81.3046419270833,-52.9894059089456,23.0573828125,9.421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 6]"
+          TopLeft="368.666666666667,42">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="181.666666666667,98"
+              Start="0,0"
+              End="181.666666666667,90.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.0186515677785" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,45.0186515677785"
+                    Point2="0,49.0186515677785"
+                    Point3="4,49.0186515677785" />
+                  <mssgle:LineSegment
+                    End="177.666666666667,49.0186515677785" />
+                  <mssgle:CubicBezierSegment
+                    Point1="177.666666666667,49.0186515677785"
+                    Point2="181.666666666667,49.0186515677785"
+                    Point3="181.666666666667,53.0186515677785" />
+                  <mssgle:LineSegment
+                    End="181.666666666667,90.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="79.3046419270833,54.0186515677785,23.0573828125,9.421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 7]"
+          TopLeft="316.666666666667,250">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-191.166666666667,51"
+              Start="0,0"
+              End="-191.166666666667,43.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.6869871043376" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.6869871043376"
+                    Point2="0,20.6869871043376"
+                    Point3="-4,20.6869871043376" />
+                  <mssgle:LineSegment
+                    End="-187.166666666667,20.6869871043376" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-187.166666666667,20.6869871043376"
+                    Point2="-191.166666666667,20.6869871043376"
+                    Point3="-191.166666666667,24.6869871043376" />
+                  <mssgle:LineSegment
+                    End="-191.166666666667,43.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-103.583333333333,25.6869871043376,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\TMP_EMPLOYEE">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="140,42"
+          Id="Package\TMP_EMPLOYEE\EMPLOYEE"
+          TopLeft="237,124" />
+        <NodeLayout
+          Size="168,42"
+          Id="Package\TMP_EMPLOYEE\Filas Con ERROR"
+          TopLeft="381,328" />
+        <NodeLayout
+          Size="165,42"
+          Id="Package\TMP_EMPLOYEE\CSV EMPLOYEE"
+          TopLeft="222,40" />
+        <NodeLayout
+          Size="164,42"
+          Id="Package\TMP_EMPLOYEE\Recuento de filas"
+          TopLeft="393,243" />
+        <EdgeLayout
+          Id="Package\TMP_EMPLOYEE.Paths[Salida de Recuento de filas 1]"
+          TopLeft="475,285">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-10,43"
+              Start="0,0"
+              End="-10,35.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.5"
+                    Point2="0,21.5"
+                    Point3="-4,21.5" />
+                  <mssgle:LineSegment
+                    End="-6,21.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-6,21.5"
+                    Point2="-10,21.5"
+                    Point3="-10,25.5" />
+                  <mssgle:LineSegment
+                    End="-10,35.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\TMP_EMPLOYEE.Paths[Salida de origen de archivo plano]"
+          TopLeft="305.75,82">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42"
+              Start="0,0"
+              End="0,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\TMP_EMPLOYEE.Paths[Salida de error de destino de OLE DB]"
+          TopLeft="307,166">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="168,77"
+              Start="0,0"
+              End="168,69.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.5"
+                    Point2="0,38.5"
+                    Point3="4,38.5" />
+                  <mssgle:LineSegment
+                    End="164,38.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="164,38.5"
+                    Point2="168,38.5"
+                    Point3="168,42.5" />
+                  <mssgle:LineSegment
+                    End="168,69.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="1.20851562499999,43.5,165.58296875,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\TMP_EMPLOYEE\EMPLOYEE">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

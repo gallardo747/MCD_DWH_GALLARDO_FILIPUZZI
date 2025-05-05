@@ -1,0 +1,2960 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/1/2025 9:00:35 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-IAI1KNV"
+  DTS:CreatorName="DESKTOP-IAI1KNV\Ezequiel"
+  DTS:DTSID="{217BE2CB-E419-49E8-940A-27578EF7988B}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LocaleID="11274"
+  DTS:ObjectName="TMP_Countries"
+  DTS:PackageType="5"
+  DTS:VersionBuild="47"
+  DTS:VersionGUID="{5ECE8127-AD1F-4CFA-BCFE-E66FDC509641}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Countries]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{5CD9B877-1F09-4EFF-8A24-4E24D2AD56AD}"
+      DTS:ObjectName="Countries">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="11274"
+          DTS:HeaderRowDelimiter="_x002C_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\Ezequiel\Mi unidad\Maestria\Ciencia de datos\AUSTRAL\16-INTRO_DATA_WAREHOUSING\TPFINAL\DESARROLLO\2-ETL\INPUTS\ingesta1\ingesta1\world-data-2023.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{15A0747C-0572-465B-9465-17BE71FBDEBB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Density (P Km2)&quot;"
+              DTS:DTSID="{9EA95537-189A-472C-8D88-F181B63F2C64}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Abbreviation"
+              DTS:DTSID="{B63120DC-B7CF-47C6-98F1-B021D15D71D4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Agricultural Land( %)"
+              DTS:DTSID="{605AC53D-4888-4B5E-A5EF-7207753BB0E3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Land Area(Km2)"
+              DTS:DTSID="{4812464F-2E18-4431-AC6B-CE62C55D95C3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Armed Forces size"
+              DTS:DTSID="{83D871EA-B6E1-4F8A-9028-1DE91C6576C9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Birth Rate"
+              DTS:DTSID="{D255E870-D4E2-4469-BDCA-6418A974D5BD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Calling Code"
+              DTS:DTSID="{3C87690A-0D52-442D-B6F6-140B4899C9CA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Capital Major City"
+              DTS:DTSID="{25EFB778-AEF4-4760-91A2-CDFB14B0DC89}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Co2-Emissions"
+              DTS:DTSID="{BC53BADD-B83C-48A5-A735-77AF3D3BE8A7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CPI"
+              DTS:DTSID="{C99D3108-84AE-4B15-B960-E29FBD354BE3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CPI Change (%)"
+              DTS:DTSID="{AE5FAE79-03EB-41A0-A193-320BC47E1A6E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Currency-Code"
+              DTS:DTSID="{09E5E152-6F22-4DA4-AFC4-C4BF2CEAADC0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fertility Rate"
+              DTS:DTSID="{0E03FE0C-7099-415D-893A-3CE65701F44E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Forested Area (%)"
+              DTS:DTSID="{806EA269-2902-4DB5-B43A-8B2FC4AA4955}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gasoline Price"
+              DTS:DTSID="{9CD0F913-4117-440A-B646-CB29C41185C4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GDP"
+              DTS:DTSID="{C78C3170-5006-47EA-8DE8-4C86C925EEC0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gross primary education enrollment (%)"
+              DTS:DTSID="{ED95E9EC-9C75-4787-A02B-1E3188F3F88B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gross tertiary education enrollment (%)"
+              DTS:DTSID="{79408E6A-F62B-4762-8DBE-2F3872566246}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Infant mortality"
+              DTS:DTSID="{3043352C-F4F6-4709-A039-C308B1E02188}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Largest city"
+              DTS:DTSID="{190B38DB-1A02-47B1-B9B7-506A80EDA531}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Life expectancy"
+              DTS:DTSID="{26ED8C7E-872E-46E2-BB18-550CAC86A5D6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Maternal mortality ratio"
+              DTS:DTSID="{35C6958A-B41B-4BB6-9E97-A1068CB3E744}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Minimum wage"
+              DTS:DTSID="{A770C04B-5584-41A1-A149-85EC6B771830}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Official language"
+              DTS:DTSID="{4F529B8A-0F06-4219-8F96-2D5E40CB0B40}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Out of pocket health expenditure"
+              DTS:DTSID="{09559B41-433F-4BC3-B623-8D7543535410}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Physicians per thousand"
+              DTS:DTSID="{B36BB080-F310-43BC-93FC-0D375625C468}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Population"
+              DTS:DTSID="{4BA6E3E1-37E5-4F00-A041-AFABF92FBD23}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Population  Labor force participation (%)"
+              DTS:DTSID="{DA46ACDA-068E-4671-B455-D0A36BC5EA90}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tax revenue (%)"
+              DTS:DTSID="{167B1917-566E-4AAA-B95F-4454817E34BB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Total tax rate"
+              DTS:DTSID="{D5A56CEB-22F0-4107-BD1B-41579BF8D4F0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Unemployment rate"
+              DTS:DTSID="{5F195CA8-3DE4-413E-BB6B-342087B03AF3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Urban_population"
+              DTS:DTSID="{42ED178B-D1BA-48D4-89A3-576009DCF8C3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Latitude"
+              DTS:DTSID="{D7FD073A-E771-4A92-BD6A-E130D46258D7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Longitude"
+              DTS:DTSID="{C9DCFF7F-3B82-44F5-A50D-1E292E7C3D47}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Countries_ErrorLog]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{486AABF5-F742-485F-92B8-AED31AC1555B}"
+      DTS:ObjectName="Countries_ErrorLog">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="11274"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\Ezequiel\Mi unidad\Maestria\Ciencia de datos\AUSTRAL\16-INTRO_DATA_WAREHOUSING\TPFINAL\DESARROLLO\2-ETL\OUTPUT_ERROR_LOGS\TMP_Countries_ErrorLogs.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{71ED7311-CC52-414E-88FC-894B100E0EB2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Density (P Km2)&quot;"
+              DTS:DTSID="{60DDB873-BDE2-48A1-8EC9-80B84A870C07}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Abbreviation"
+              DTS:DTSID="{099A90E6-1FAD-42EF-89AD-DEB06BC8065F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Agricultural Land( %)"
+              DTS:DTSID="{58C18FA8-5C2A-465C-9375-727424AB8E2A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Land Area(Km2)"
+              DTS:DTSID="{3C4C79FE-E0B8-425B-8A98-B353AEFD9E86}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Armed Forces size"
+              DTS:DTSID="{3FEBD6A2-07B5-4140-97E7-789DC5C15C4D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Birth Rate"
+              DTS:DTSID="{AA326D81-E982-4CF7-8822-4F51AFE7C6E0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Calling Code"
+              DTS:DTSID="{EEB42B03-A811-4366-B6BB-1D76C4CA388C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Capital Major City"
+              DTS:DTSID="{BBF10D61-FB6E-430F-BE97-C5069D3EED19}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Co2-Emissions"
+              DTS:DTSID="{DB7668D2-21C8-4014-AA56-919416C484BB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CPI"
+              DTS:DTSID="{FF852E52-6FB8-4997-B06B-C875D9C960D8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CPI Change (%)"
+              DTS:DTSID="{4A364C9C-9B4C-4DF9-AC32-A5B385DF223B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Currency-Code"
+              DTS:DTSID="{BCBC5D84-0B07-4739-9B2F-4185AC7C7062}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fertility Rate"
+              DTS:DTSID="{7F2174DC-6769-4BD9-B2D2-4C2F245C2AF2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Forested Area (%)"
+              DTS:DTSID="{59BF9A25-63E2-4AA8-B575-68F639EA9108}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gasoline Price"
+              DTS:DTSID="{352C7CA6-FFC9-44BD-A85F-0468D817B64C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GDP"
+              DTS:DTSID="{F52D3444-24EE-4A55-8D5B-F4E5FA95FDFB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gross primary education enrollment (%)"
+              DTS:DTSID="{60AF2B32-7BBE-4C0A-9725-3FCC5807B42A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gross tertiary education enrollment (%)"
+              DTS:DTSID="{3EF5E2DD-7E55-454D-9B1F-A9C3AA880BC2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Infant mortality"
+              DTS:DTSID="{95C65115-41BA-4F60-AF84-38006C8938A0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Largest city"
+              DTS:DTSID="{BD90FEDC-5235-485C-B6A7-0EA5D6DBF67A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Life expectancy"
+              DTS:DTSID="{AEF745D3-599A-43F1-909C-20BA1CB4C9AE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Maternal mortality ratio"
+              DTS:DTSID="{C8AF2DAF-88CC-4DF2-A96E-2D719A3D6106}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Minimum wage"
+              DTS:DTSID="{305C877F-9F82-416B-8B17-518A0157B079}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Official language"
+              DTS:DTSID="{6C17C6F6-645C-496E-B022-4580CA708675}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Out of pocket health expenditure"
+              DTS:DTSID="{D81D5714-E778-4BDD-AFF8-F792A56700AE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Physicians per thousand"
+              DTS:DTSID="{3FDF7076-565F-4DB9-9828-7C675F0F0BD7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Population"
+              DTS:DTSID="{DC81975C-A98A-45D3-94EB-5FFC0B85C8AD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Population  Labor force participation (%)"
+              DTS:DTSID="{739B9586-7CF9-4153-A59B-A0CF565B819F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tax revenue (%)"
+              DTS:DTSID="{8725FA30-6928-4FDC-BF56-59CC9C4E7AAC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Total tax rate"
+              DTS:DTSID="{76F1AFDB-4354-4F88-9125-0FA610A4BB65}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Unemployment rate"
+              DTS:DTSID="{FAECD9B2-F546-4993-83E8-89C24D5C71F4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Urban_population"
+              DTS:DTSID="{1952B37A-1CC0-481C-B9CC-CA997BCFFD2A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Latitude"
+              DTS:DTSID="{E9B9D9A2-E298-44ED-B279-05B58E60E581}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Longitude"
+              DTS:DTSID="{C8E047DE-8819-4E27-A3A5-CAED8ABC82F2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{D33BD7CF-2386-4364-9867-51FEB1FCD6C6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{F843E7B5-4A68-4BF3-85CA-8C3B9D98BFC9}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9E48DBFD-2CAA-470F-9779-9968678108D4}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="ErroresRowCount">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{4533BFE0-839C-4242-8592-D1CD61A2947A}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[System::PackageName]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="JobName">
+      <DTS:VariableValue
+        DTS:DataType="8">TMP_Countries</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\END LOG OK"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{646C67C4-A7BD-4EA9-B20B-12CFE25599A6}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="END LOG OK"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{98DA7ED2-5B74-40EC-A327-FBA15428B65D}"
+          SQLTask:SqlStatementSource="EXEC [LOG].[DWH_End_Log] ?, 'FINISH';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="@JobName"
+            SQLTask:DtsVariableName="User::JobName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\ERROR LOG"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{BD62BE9D-D8C1-4029-AF4A-DC9CCA29C890}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ERROR LOG"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{98DA7ED2-5B74-40EC-A327-FBA15428B65D}"
+          SQLTask:SqlStatementSource="EXEC [LOG].[DWH_End_Log] ?, 'ABORT';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="NewParameterName"
+            SQLTask:DtsVariableName="User::JobName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\FINISHED WITH WARNINGS LOG"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{40425AD1-4B2B-4CAB-848D-53FCC7AEF163}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="FINISHED WITH WARNINGS LOG"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{98DA7ED2-5B74-40EC-A327-FBA15428B65D}"
+          SQLTask:SqlStatementSource="EXEC [LOG].[DWH_End_Log] ?, 'ABORT';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="NewParameterName"
+            SQLTask:DtsVariableName="User::JobName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\START LOG"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{D6E0E61D-024D-4806-8119-932AB782DE48}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="START LOG"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{98DA7ED2-5B74-40EC-A327-FBA15428B65D}"
+          SQLTask:SqlStatementSource="EXEC [LOG].[DWH_Start_Log] ?;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="NewParameterName"
+            SQLTask:DtsVariableName="User::JobName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\TMP_COUNTRIES"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{509DAEE4-EC91-485C-85D7-EAB16B70E9B4}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="TMP_COUNTRIES"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\TMP_COUNTRIES\COUNTRIES"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino de OLE DB"
+              name="COUNTRIES"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[TMP].[COUNTRIES]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadMaxInsertCommitSize">1000</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\TMP_COUNTRIES\COUNTRIES.Connections[OleDbConnection]"
+                  connectionManagerID="{98DA7ED2-5B74-40EC-A327-FBA15428B65D}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Conection_DWH]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB]"
+                  errorOrTruncationOperation="Insertar"
+                  errorRowDisposition="RedirectRow"
+                  hasSideEffects="true"
+                  name="Entrada de destino de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB].Columns[Country]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Country"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB].ExternalColumns[Country]"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Country]" />
+                    <inputColumn
+                      refId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB].Columns[Abbreviation]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Abbreviation"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB].ExternalColumns[Abbreviation]"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Abbreviation]" />
+                    <inputColumn
+                      refId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB].Columns[&quot;Density (P Km2)&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;Density (P Km2)&quot;"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB].ExternalColumns[Density]"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[&quot;Density (P Km2)&quot;]" />
+                    <inputColumn
+                      refId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB].Columns[Agricultural Land( %)]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Agricultural Land( %)"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB].ExternalColumns[Agricultural_Land]"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Agricultural Land( %)]" />
+                    <inputColumn
+                      refId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB].Columns[Land Area(Km2)]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Land Area(Km2)"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB].ExternalColumns[Land_Area]"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Land Area(Km2)]" />
+                    <inputColumn
+                      refId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB].Columns[Capital Major City]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Capital Major City"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB].ExternalColumns[Capital]"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Capital Major City]" />
+                    <inputColumn
+                      refId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB].Columns[Currency-Code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Currency-Code"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB].ExternalColumns[Currency_Code]"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Currency-Code]" />
+                    <inputColumn
+                      refId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB].Columns[Armed Forces size]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Armed Forces size"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB].ExternalColumns[Armed_Force_Size]"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Armed Forces size]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB].ExternalColumns[Country]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB].ExternalColumns[Density]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Density" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB].ExternalColumns[Abbreviation]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Abbreviation" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB].ExternalColumns[Agricultural_Land]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Agricultural_Land" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB].ExternalColumns[Land_Area]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Land_Area" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB].ExternalColumns[Armed_Force_Size]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Armed_Force_Size" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB].ExternalColumns[Capital]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Capital" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB].ExternalColumns[Currency_Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Currency_Code" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\TMP_COUNTRIES\COUNTRIES.Outputs[Salida de error de destino de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de OLE DB"
+                  synchronousInputId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\COUNTRIES.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\TMP_COUNTRIES\COUNTRIES.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\COUNTRIES.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\TMP_COUNTRIES\COUNTRIES.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\TMP_COUNTRIES\CSV COUNTRIES"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Origen de archivo plano"
+              localeId="11274"
+              name="CSV COUNTRIES"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si las columnas de longitud cero se tratan como NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Countries]"
+                  connectionManagerRefId="Package.ConnectionManagers[Countries]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano]"
+                  name="Salida de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Country]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Country]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Country]"
+                      name="Country"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[&quot;Density (P Km2)&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[&quot;Density (P Km2)&quot;]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[&quot;Density (P Km2)&quot;]"
+                      name="&quot;Density (P Km2)&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Abbreviation]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Abbreviation]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Abbreviation]"
+                      name="Abbreviation"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Agricultural Land( %)]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Agricultural Land( %)]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Agricultural Land( %)]"
+                      name="Agricultural Land( %)"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Land Area(Km2)]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Land Area(Km2)]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Land Area(Km2)]"
+                      name="Land Area(Km2)"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Armed Forces size]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Armed Forces size]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Armed Forces size]"
+                      name="Armed Forces size"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Birth Rate]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Birth Rate]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Birth Rate]"
+                      name="Birth Rate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Calling Code]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Calling Code]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Calling Code]"
+                      name="Calling Code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Capital Major City]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Capital Major City]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Capital Major City]"
+                      name="Capital Major City"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Co2-Emissions]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Co2-Emissions]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Co2-Emissions]"
+                      name="Co2-Emissions"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[CPI]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[CPI]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[CPI]"
+                      name="CPI"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[CPI Change (%)]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[CPI Change (%)]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[CPI Change (%)]"
+                      name="CPI Change (%)"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Currency-Code]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Currency-Code]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Currency-Code]"
+                      name="Currency-Code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Fertility Rate]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Fertility Rate]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Fertility Rate]"
+                      name="Fertility Rate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Forested Area (%)]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Forested Area (%)]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Forested Area (%)]"
+                      name="Forested Area (%)"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Gasoline Price]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Gasoline Price]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Gasoline Price]"
+                      name="Gasoline Price"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[GDP]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[GDP]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[GDP]"
+                      name="GDP"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Gross primary education enrollment (%)]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Gross primary education enrollment (%)]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Gross primary education enrollment (%)]"
+                      name="Gross primary education enrollment (%)"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Gross tertiary education enrollment (%)]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Gross tertiary education enrollment (%)]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Gross tertiary education enrollment (%)]"
+                      name="Gross tertiary education enrollment (%)"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Infant mortality]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Infant mortality]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Infant mortality]"
+                      name="Infant mortality"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Largest city]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Largest city]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Largest city]"
+                      name="Largest city"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Life expectancy]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Life expectancy]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Life expectancy]"
+                      name="Life expectancy"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Maternal mortality ratio]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Maternal mortality ratio]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Maternal mortality ratio]"
+                      name="Maternal mortality ratio"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Minimum wage]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Minimum wage]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Minimum wage]"
+                      name="Minimum wage"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Official language]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Official language]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Official language]"
+                      name="Official language"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Out of pocket health expenditure]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Out of pocket health expenditure]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Out of pocket health expenditure]"
+                      name="Out of pocket health expenditure"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Physicians per thousand]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Physicians per thousand]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Physicians per thousand]"
+                      name="Physicians per thousand"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Population]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Population]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Population]"
+                      name="Population"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Population  Labor force participation (%)]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Population  Labor force participation (%)]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Population  Labor force participation (%)]"
+                      name="Population  Labor force participation (%)"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Tax revenue (%)]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Tax revenue (%)]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Tax revenue (%)]"
+                      name="Tax revenue (%)"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Total tax rate]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Total tax rate]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Total tax rate]"
+                      name="Total tax rate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Unemployment rate]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Unemployment rate]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Unemployment rate]"
+                      name="Unemployment rate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Urban_population]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Urban_population]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Urban_population]"
+                      name="Urban_population"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Latitude]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Latitude]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Latitude]"
+                      name="Latitude"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Longitude]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Longitude]"
+                      length="50"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].Columns[Longitude]"
+                      name="Longitude"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Country]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[&quot;Density (P Km2)&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;Density (P Km2)&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Abbreviation]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Abbreviation" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Agricultural Land( %)]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Agricultural Land( %)" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Land Area(Km2)]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Land Area(Km2)" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Armed Forces size]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Armed Forces size" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Birth Rate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Birth Rate" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Calling Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Calling Code" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Capital Major City]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Capital Major City" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Co2-Emissions]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Co2-Emissions" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[CPI]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CPI" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[CPI Change (%)]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CPI Change (%)" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Currency-Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Currency-Code" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Fertility Rate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fertility Rate" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Forested Area (%)]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Forested Area (%)" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Gasoline Price]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Gasoline Price" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[GDP]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="GDP" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Gross primary education enrollment (%)]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Gross primary education enrollment (%)" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Gross tertiary education enrollment (%)]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Gross tertiary education enrollment (%)" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Infant mortality]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Infant mortality" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Largest city]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Largest city" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Life expectancy]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Life expectancy" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Maternal mortality ratio]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Maternal mortality ratio" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Minimum wage]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Minimum wage" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Official language]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Official language" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Out of pocket health expenditure]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Out of pocket health expenditure" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Physicians per thousand]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Physicians per thousand" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Population]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Population  Labor force participation (%)]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population  Labor force participation (%)" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Tax revenue (%)]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Tax revenue (%)" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Total tax rate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Total tax rate" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Unemployment rate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Unemployment rate" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Urban_population]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Urban_population" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Latitude]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Latitude" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano].ExternalColumns[Longitude]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Longitude" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de error de origen de archivo plano]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Columna de salida de error de origen de archivo plano"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      name="Columna de salida de error de origen de archivo plano" />
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\TMP_COUNTRIES\Filas Con ERROR"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Destino de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Destino de archivo plano"
+              localeId="11274"
+              name="Filas Con ERROR"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si los datos sobrescriben el archivo de destino o se anexan al mismo."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Especifica el texto para escribir en el archivo de destino antes de escribir ningún dato."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="Cuando el calificador de texto está habilitado, especifica si este contendrá secuencias de escape o no en los datos escritos en el archivo de destino."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\TMP_COUNTRIES\Filas Con ERROR.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Countries_ErrorLog]"
+                  connectionManagerRefId="Package.ConnectionManagers[Countries_ErrorLog]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano]"
+                  hasSideEffects="true"
+                  name="Entrada de destino de archivo plano">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[ErrorCode]"
+                      lineageId="Package\TMP_COUNTRIES\COUNTRIES.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]" />
+                    <inputColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].Columns[ErrorColumn]"
+                      cachedDataType="i4"
+                      cachedName="ErrorColumn"
+                      externalMetadataColumnId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[ErrorColumn]"
+                      lineageId="Package\TMP_COUNTRIES\COUNTRIES.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[ErrorCode]"
+                      dataType="i4"
+                      name="ErrorCode" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[ErrorColumn]"
+                      dataType="i4"
+                      name="ErrorColumn" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Country]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[&quot;Density (P Km2)&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;Density (P Km2)&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Abbreviation]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Abbreviation" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Agricultural Land( %)]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Agricultural Land( %)" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Land Area(Km2)]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Land Area(Km2)" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Armed Forces size]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Armed Forces size" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Birth Rate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Birth Rate" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Calling Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Calling Code" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Capital Major City]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Capital Major City" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Co2-Emissions]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Co2-Emissions" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[CPI]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CPI" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[CPI Change (%)]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CPI Change (%)" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Currency-Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Currency-Code" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Fertility Rate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fertility Rate" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Forested Area (%)]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Forested Area (%)" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Gasoline Price]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Gasoline Price" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[GDP]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="GDP" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Gross primary education enrollment (%)]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Gross primary education enrollment (%)" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Gross tertiary education enrollment (%)]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Gross tertiary education enrollment (%)" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Infant mortality]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Infant mortality" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Largest city]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Largest city" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Life expectancy]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Life expectancy" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Maternal mortality ratio]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Maternal mortality ratio" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Minimum wage]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Minimum wage" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Official language]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Official language" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Out of pocket health expenditure]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Out of pocket health expenditure" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Physicians per thousand]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Physicians per thousand" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Population]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Population  Labor force participation (%)]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population  Labor force participation (%)" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Tax revenue (%)]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Tax revenue (%)" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Total tax rate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Total tax rate" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Unemployment rate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Unemployment rate" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Urban_population]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Urban_population" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Latitude]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Latitude" />
+                    <externalMetadataColumn
+                      refId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano].ExternalColumns[Longitude]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Longitude" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\TMP_COUNTRIES\Recuento de filas"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Recuento de filas;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+              description="Cuenta las filas a medida que pasan por un flujo de datos. Por ejemplo, se usa el número de filas procesadas para determinar si deben o no realizarse operaciones de limpieza o actualizar el texto de un mensaje de correo electrónico para comunicar el estado de procesamiento."
+              name="Recuento de filas">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el recuento de filas."
+                  name="VariableName">User::ErroresRowCount</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\TMP_COUNTRIES\Recuento de filas.Inputs[Entrada de Recuento de filas 1]"
+                  hasSideEffects="true"
+                  name="Entrada de Recuento de filas 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\TMP_COUNTRIES\Recuento de filas.Outputs[Salida de Recuento de filas 1]"
+                  name="Salida de Recuento de filas 1"
+                  synchronousInputId="Package\TMP_COUNTRIES\Recuento de filas.Inputs[Entrada de Recuento de filas 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\TMP_COUNTRIES.Paths[Salida de error de destino de OLE DB]"
+              endId="Package\TMP_COUNTRIES\Recuento de filas.Inputs[Entrada de Recuento de filas 1]"
+              name="Salida de error de destino de OLE DB"
+              startId="Package\TMP_COUNTRIES\COUNTRIES.Outputs[Salida de error de destino de OLE DB]" />
+            <path
+              refId="Package\TMP_COUNTRIES.Paths[Salida de origen de archivo plano]"
+              endId="Package\TMP_COUNTRIES\COUNTRIES.Inputs[Entrada de destino de OLE DB]"
+              name="Salida de origen de archivo plano"
+              startId="Package\TMP_COUNTRIES\CSV COUNTRIES.Outputs[Salida de origen de archivo plano]" />
+            <path
+              refId="Package\TMP_COUNTRIES.Paths[Salida de Recuento de filas 1]"
+              endId="Package\TMP_COUNTRIES\Filas Con ERROR.Inputs[Entrada de destino de archivo plano]"
+              name="Salida de Recuento de filas 1"
+              startId="Package\TMP_COUNTRIES\Recuento de filas.Outputs[Salida de Recuento de filas 1]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\TRUNCATE TMP COUNTRIES"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{E0D394D8-6923-4889-BE7B-4D5D5C097D52}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="TRUNCATE TMP COUNTRIES"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{98DA7ED2-5B74-40EC-A327-FBA15428B65D}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE TMP.COUNTRIES;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{DE7DB6B5-FC7F-4DE0-9D96-A1DCB9E8A5FE}"
+      DTS:From="Package\TRUNCATE TMP COUNTRIES"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\TMP_COUNTRIES" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{5B3C0725-F5CC-4B4B-8B02-404F98E51DEE}"
+      DTS:From="Package\START LOG"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 1"
+      DTS:To="Package\TRUNCATE TMP COUNTRIES" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{B2B6EB86-4BEB-4740-97E3-A72F75127EB7}"
+      DTS:EvalOp="1"
+      DTS:Expression="@[User::ErroresRowCount]&lt;1"
+      DTS:From="Package\TMP_COUNTRIES"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 2"
+      DTS:To="Package\END LOG OK" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{4282494E-1FC1-41DB-B651-842717580446}"
+      DTS:From="Package\TMP_COUNTRIES"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 3"
+      DTS:To="Package\ERROR LOG"
+      DTS:Value="1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{7A88A048-3D33-40EC-A4D5-0A3ACC9703FC}"
+      DTS:From="Package\TRUNCATE TMP COUNTRIES"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 4"
+      DTS:To="Package\ERROR LOG"
+      DTS:Value="1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{31652638-9672-4730-B271-3E32FDCD697F}"
+      DTS:From="Package\END LOG OK"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 5"
+      DTS:To="Package\ERROR LOG"
+      DTS:Value="1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{AA025FDE-A376-4327-8252-DBB0FE286CEF}"
+      DTS:From="Package\START LOG"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 6"
+      DTS:To="Package\ERROR LOG"
+      DTS:Value="1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 7]"
+      DTS:CreationName=""
+      DTS:DTSID="{8933945C-372D-419D-AD9B-1CA408B52D22}"
+      DTS:EvalOp="1"
+      DTS:Expression="@[User::ErroresRowCount]&gt;0"
+      DTS:From="Package\TMP_COUNTRIES"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 7"
+      DTS:To="Package\FINISHED WITH WARNINGS LOG" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="147,42"
+          Id="Package\END LOG OK"
+          TopLeft="268,298" />
+        <NodeLayout
+          Size="145,42"
+          Id="Package\ERROR LOG"
+          TopLeft="455,140" />
+        <NodeLayout
+          Size="251,42"
+          Id="Package\FINISHED WITH WARNINGS LOG"
+          TopLeft="0,301" />
+        <NodeLayout
+          Size="141,42"
+          Id="Package\START LOG"
+          TopLeft="276,0" />
+        <NodeLayout
+          Size="173,42"
+          Id="Package\TMP_COUNTRIES"
+          TopLeft="259,208" />
+        <NodeLayout
+          Size="233,42"
+          Id="Package\TRUNCATE TMP COUNTRIES"
+          TopLeft="234,104" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="350.5,146">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-32.5,62"
+              Start="0,0"
+              End="-32.5,54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.8591065292096" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.8591065292096"
+                    Point2="0,36.8591065292096"
+                    Point3="-4,36.8591065292096" />
+                  <mssgle:LineSegment
+                    End="-28.5,36.8591065292096" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-28.5,36.8591065292096"
+                    Point2="-32.5,36.8591065292096"
+                    Point3="-32.5,40.8591065292096" />
+                  <mssgle:LineSegment
+                    End="-32.5,54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 1]"
+          TopLeft="324.333333333333,42">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="26.1666666666667,62"
+              Start="0,0"
+              End="26.1666666666667,54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.2173913043478" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.2173913043478"
+                    Point2="0,25.2173913043478"
+                    Point3="4,25.2173913043478" />
+                  <mssgle:LineSegment
+                    End="22.1666666666667,25.2173913043478" />
+                  <mssgle:CubicBezierSegment
+                    Point1="22.1666666666667,25.2173913043478"
+                    Point2="26.1666666666667,25.2173913043478"
+                    Point3="26.1666666666667,29.2173913043478" />
+                  <mssgle:LineSegment
+                    End="26.1666666666667,54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 2]"
+          TopLeft="373,250">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-54.6666666666667,48"
+              Start="0,0"
+              End="-54.6666666666667,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.952130719957" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.952130719957"
+                    Point2="0,23.952130719957"
+                    Point3="-4,23.952130719957" />
+                  <mssgle:LineSegment
+                    End="-50.6666666666667,23.952130719957" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-50.6666666666667,23.952130719957"
+                    Point2="-54.6666666666667,23.952130719957"
+                    Point3="-54.6666666666667,27.952130719957" />
+                  <mssgle:LineSegment
+                    End="-54.6666666666667,40.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-35.3333333333333,28.952130719957,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 3]"
+          TopLeft="373,208">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="177.333333333333,-26"
+              Start="0,0"
+              End="177.333333333333,-18.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-8.97169627930485" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-8.97169627930485"
+                    Point2="0,-12.9716962793049"
+                    Point3="4,-12.9716962793049" />
+                  <mssgle:LineSegment
+                    End="173.333333333333,-12.9716962793049" />
+                  <mssgle:CubicBezierSegment
+                    Point1="173.333333333333,-12.9716962793049"
+                    Point2="177.333333333333,-12.9716962793049"
+                    Point3="177.333333333333,-16.9716962793049" />
+                  <mssgle:LineSegment
+                    End="177.333333333333,-18.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="77.1379752604167,-7.97169627930485,23.0573828125,9.421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 4]"
+          TopLeft="467,117.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="83.3333333333334,22.5"
+              Start="0,0"
+              End="83.3333333333334,15">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="79.3333333333334,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="79.3333333333334,0"
+                    Point2="83.3333333333334,0"
+                    Point3="83.3333333333334,4" />
+                  <mssgle:LineSegment
+                    End="83.3333333333334,15" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="71.8046419270834,-15.421875,23.0573828125,9.421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 5]"
+          TopLeft="364.666666666667,298">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="185.666666666667,-116"
+              Start="0,0"
+              End="185.666666666667,-108.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-53.9894059089456" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-53.9894059089456"
+                    Point2="0,-57.9894059089456"
+                    Point3="4,-57.9894059089456" />
+                  <mssgle:LineSegment
+                    End="181.666666666667,-57.9894059089456" />
+                  <mssgle:CubicBezierSegment
+                    Point1="181.666666666667,-57.9894059089456"
+                    Point2="185.666666666667,-57.9894059089456"
+                    Point3="185.666666666667,-61.9894059089456" />
+                  <mssgle:LineSegment
+                    End="185.666666666667,-108.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="81.3046419270833,-52.9894059089456,23.0573828125,9.421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 6]"
+          TopLeft="368.666666666667,42">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="181.666666666667,98"
+              Start="0,0"
+              End="181.666666666667,90.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.0186515677785" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,45.0186515677785"
+                    Point2="0,49.0186515677785"
+                    Point3="4,49.0186515677785" />
+                  <mssgle:LineSegment
+                    End="177.666666666667,49.0186515677785" />
+                  <mssgle:CubicBezierSegment
+                    Point1="177.666666666667,49.0186515677785"
+                    Point2="181.666666666667,49.0186515677785"
+                    Point3="181.666666666667,53.0186515677785" />
+                  <mssgle:LineSegment
+                    End="181.666666666667,90.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="79.3046419270833,54.0186515677785,23.0573828125,9.421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 7]"
+          TopLeft="318,250">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-192.5,51"
+              Start="0,0"
+              End="-192.5,43.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.680412371134" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.680412371134"
+                    Point2="0,20.680412371134"
+                    Point3="-4,20.680412371134" />
+                  <mssgle:LineSegment
+                    End="-188.5,20.680412371134" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-188.5,20.680412371134"
+                    Point2="-192.5,20.680412371134"
+                    Point3="-192.5,24.680412371134" />
+                  <mssgle:LineSegment
+                    End="-192.5,43.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-104.25,25.680412371134,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\TMP_COUNTRIES">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="144,42"
+          Id="Package\TMP_COUNTRIES\COUNTRIES"
+          TopLeft="237,124" />
+        <NodeLayout
+          Size="168,42"
+          Id="Package\TMP_COUNTRIES\Filas Con ERROR"
+          TopLeft="381,328" />
+        <NodeLayout
+          Size="169,42"
+          Id="Package\TMP_COUNTRIES\CSV COUNTRIES"
+          TopLeft="222,40" />
+        <NodeLayout
+          Size="164,42"
+          Id="Package\TMP_COUNTRIES\Recuento de filas"
+          TopLeft="393,243" />
+        <EdgeLayout
+          Id="Package\TMP_COUNTRIES.Paths[Salida de Recuento de filas 1]"
+          TopLeft="475,285">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-10,43"
+              Start="0,0"
+              End="-10,35.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.5"
+                    Point2="0,21.5"
+                    Point3="-4,21.5" />
+                  <mssgle:LineSegment
+                    End="-6,21.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-6,21.5"
+                    Point2="-10,21.5"
+                    Point3="-10,25.5" />
+                  <mssgle:LineSegment
+                    End="-10,35.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\TMP_COUNTRIES.Paths[Salida de origen de archivo plano]"
+          TopLeft="307.75,82">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42"
+              Start="0,0"
+              End="0,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\TMP_COUNTRIES.Paths[Salida de error de destino de OLE DB]"
+          TopLeft="309,166">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="166,77"
+              Start="0,0"
+              End="166,69.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.5"
+                    Point2="0,38.5"
+                    Point3="4,38.5" />
+                  <mssgle:LineSegment
+                    End="162,38.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="162,38.5"
+                    Point2="166,38.5"
+                    Point3="166,42.5" />
+                  <mssgle:LineSegment
+                    End="166,69.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0.20851562499999,43.5,165.58296875,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\TMP_COUNTRIES\COUNTRIES">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

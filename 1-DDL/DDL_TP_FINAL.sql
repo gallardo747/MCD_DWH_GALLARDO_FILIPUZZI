@@ -255,7 +255,7 @@ CREATE TABLE TMP.PRODUCTS
 	product_name varchar(50) NULL,
 	supplier_cd varchar(10) NULL,
 	category_cd varchar(10) NULL,
-	Quantity_per_unit varchar(10) NULL,
+	Quantity_per_unit varchar(50) NULL,
 	unit_price varchar(10) NULL,
 	units_in_stock varchar(10) NULL,
 	units_on_order varchar(10) NULL,
@@ -269,7 +269,7 @@ CREATE TABLE STG.LK_PRODUCTS
 	prod_product_name varchar(50) NULL,
 	prod_supplier_id int NOT NULL,
 	prod_category_id int NOT NULL,
-	prod_Quantity_per_unit DECIMAL(10,2) NULL,
+	prod_Quantity_per_unit VARCHAR(50) NULL,
 	prod_unit_price DECIMAL(10,2) NULL,
 	prod_units_in_stock DECIMAL(10,2) NULL,
 	prod_units_on_order DECIMAL(10,2) NULL,
@@ -287,7 +287,7 @@ CREATE TABLE DWH.LK_PRODUCTS
 	prod_product_name varchar(50) NULL,
 	prod_supplier_id int NOT NULL,
 	prod_category_id int NOT NULL,
-	prod_Quantity_per_unit DECIMAL(10,2) NULL,
+	prod_Quantity_per_unit VARCHAR(50) NULL,
 	prod_unit_price DECIMAL(10,2) NULL,
 	prod_units_in_stock DECIMAL(10,2) NULL,
 	prod_units_on_order DECIMAL(10,2) NULL,
@@ -308,15 +308,15 @@ CREATE TABLE TMP.EMPLOYEES
 	First_name varchar(50) NULL,
 	title varchar(50) NULL,
 	title_of_courtesy varchar(50) NULL,
-	birth_date varchar(10) NULL,
-	hire_date varchar(10) NULL,
+	birth_date varchar(50) NULL,
+	hire_date varchar(50) NULL,
 	address varchar(100) NULL,
 	city varchar(50) NULL,
 	region_cd varchar(50) NULL,
 	postal_Code varchar(50) NULL,
 	home_phone varchar(50) NULL,
-	extension varchar(10) NULL,
-	photo varchar(400) NULL,
+	extension varchar(50) NULL,
+	photo varchar(1000) NULL,
 	notes varchar(1000) NULL,
 	report_to varchar(50) NULL,
 	photo_path varchar(50) NULL
@@ -337,7 +337,7 @@ CREATE TABLE STG.LK_EMPLOYEES
 	Emp_postal_Code varchar(50) NULL,
 	Emp_home_phone varchar(50) NULL,
 	Emp_extension varchar(10) NULL,
-	Emp_photo varchar(400) NULL,
+	Emp_photo varchar(1000) NULL,
 	Emp_notes varchar(1000) NULL,
 	Emp_report_to_id int NOT NULL,
 	Emp_photo_path varchar(50) NULL,
@@ -363,7 +363,7 @@ CREATE TABLE DWH.LK_EMPLOYEES
 	Emp_postal_Code varchar(50) NULL,
 	Emp_home_phone varchar(50) NULL,
 	Emp_extension varchar(10) NULL,
-	Emp_photo varchar(400) NULL,
+	Emp_photo varchar(1000) NULL,
 	Emp_notes varchar(1000) NULL,
 	Emp_report_to_id int NOT NULL,
 	Emp_photo_path varchar(50) NULL,
@@ -552,7 +552,6 @@ CREATE TABLE TMP.ORDERS_DETAILS
 	Order_CD varchar (50) NULL,
 	Product_cd varchar(50) NULL,
 	Unit_Price varchar(50) NULL,
-	Order_Date varchar(50) NULL,
 	Quantity varchar(50) NULL,
 	Discount varchar(50) NULL
 );
@@ -562,7 +561,6 @@ CREATE TABLE STG.LK_ORDERS_DETAILS
 	OrdDet_Order_id int NOT NULL,
 	OrdDet_Product_id int NOT NULL,
 	OrdDet_Unit_Price DECIMAL(10,2) NULL,
-	OrdDet_Order_Date DATE NOT NULL,
 	OrdDet_Quantity DECIMAL(10,2) NULL,
 	OrdDet_Discount DECIMAL(10,2) NULL	,
 	AUD_INSERT_DT datetime NOT NULL,
@@ -576,7 +574,6 @@ CREATE TABLE DWH.LK_ORDERS_DETAILS
 	OrdDet_Order_id int NOT NULL,
 	OrdDet_Product_id int NOT NULL,
 	OrdDet_Unit_Price DECIMAL(10,2) NULL,
-	OrdDet_Order_Date DATE NOT NULL,
 	OrdDet_Quantity DECIMAL(10,2) NULL,
 	OrdDet_Discount DECIMAL(10,2) NULL	,
 	AUD_INSERT_DT datetime NOT NULL,
@@ -591,6 +588,18 @@ CREATE TABLE TMP.SHIPPERS
 	Shipper_CD varchar (10) NULL,
 	Company_Name varchar(50) NULL,
 	Phone varchar(50) NULL
+);
+
+CREATE TABLE TMP.COUNTRIES
+(
+	Country varchar (10) NULL,
+	Density varchar(50) NULL,
+	Abbreviation varchar(50) NULL,
+	Agricultural_Land varchar(50) NULL,
+	Land_Area varchar(50) NULL,
+	Armed_Force_Size varchar(50) NULL,
+	Capital  varchar(50) NULL,
+	Currency_Code  varchar(50) NULL,
 );
 
 CREATE TABLE STG.LK_SHIPPERS
