@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Ezequiel\\Mi unidad\\Maestria\\Ciencia de datos\\AUSTRAL\\16-INTRO_DATA_WAREHOUSING\\TPFINAL\\DESARROLLO\\2-ETL\\TP_DWH_MCD_2025\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{939B1C4B-FCAE-D00F-8DC2-07291519162B}|TP_DWH_MCD_2025.dtproj|C:\\Users\\Ezequiel\\Mi unidad\\Maestria\\Ciencia de datos\\AUSTRAL\\16-INTRO_DATA_WAREHOUSING\\TPFINAL\\DESARROLLO\\2-ETL\\TP_DWH_MCD_2025\\TMP_Countries.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{939B1C4B-FCAE-D00F-8DC2-07291519162B}|TP_DWH_MCD_2025.dtproj|solutionrelative:TMP_Countries.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+      "AbsoluteMoniker": "D:0:0:{939B1C4B-FCAE-D00F-8DC2-07291519162B}|TP_DWH_MCD_2025.dtproj|C:\\Users\\Ezequiel\\Mi unidad\\Maestria\\Ciencia de datos\\AUSTRAL\\16-INTRO_DATA_WAREHOUSING\\TPFINAL\\DESARROLLO\\2-ETL\\TP_DWH_MCD_2025\\DWH_Territories.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{939B1C4B-FCAE-D00F-8DC2-07291519162B}|TP_DWH_MCD_2025.dtproj|solutionrelative:DWH_Territories.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,13 +23,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TMP_Countries.dtsx [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Ezequiel\\Mi unidad\\Maestria\\Ciencia de datos\\AUSTRAL\\16-INTRO_DATA_WAREHOUSING\\TPFINAL\\DESARROLLO\\2-ETL\\TP_DWH_MCD_2025\\TMP_Countries.dtsx",
-              "RelativeDocumentMoniker": "TMP_Countries.dtsx",
-              "ToolTip": "C:\\Users\\Ezequiel\\Mi unidad\\Maestria\\Ciencia de datos\\AUSTRAL\\16-INTRO_DATA_WAREHOUSING\\TPFINAL\\DESARROLLO\\2-ETL\\TP_DWH_MCD_2025\\TMP_Countries.dtsx [Dise\u00F1o]",
-              "RelativeToolTip": "TMP_Countries.dtsx [Dise\u00F1o]",
+              "Title": "DWH_Territories.dtsx [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Mi unidad\\Maestria\\Ciencia de datos\\AUSTRAL\\16-INTRO_DATA_WAREHOUSING\\TPFINAL\\DESARROLLO\\2-ETL\\TP_DWH_MCD_2025\\DWH_Territories.dtsx",
+              "RelativeDocumentMoniker": "DWH_Territories.dtsx",
+              "ToolTip": "C:\\Users\\Ezequiel\\Mi unidad\\Maestria\\Ciencia de datos\\AUSTRAL\\16-INTRO_DATA_WAREHOUSING\\TPFINAL\\DESARROLLO\\2-ETL\\TP_DWH_MCD_2025\\DWH_Territories.dtsx [Dise\u00F1o]",
+              "RelativeToolTip": "DWH_Territories.dtsx [Dise\u00F1o]",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFTSURBVDhPY2QAgqUbD/8H0bjAu49fGG7fvZ8\u002BqTFrFlQIAv7/h\u002BgDGfDv71\u002BcePKi7f9NPZP/59VPSwNrQAJMUJogaK0pZDh\u002B6uxMdEOINqC6pR9MgwwBM6CABUqDQcWCa1AWA0NHghac//k9G0NcZAiYvWj5GjANAxgu\u002BC2rAcYwAGJz6NkxZEe7QUVQAYYBrI9vgDEMwPhffkEFsAFCsfDp\u002B9//D98jYgOqDQwIBiLI5vc/GBjefP/PwMLGARVFABQDQIEGwyCArPnNdwaGf1iSG85ARNb8\u002BhsDwweQAb\u002BBAmgAZyAia371lYHh7MnrDI9/yzA4hhQwlM29/J/BeCbYPSjpABT3MJvf//jP8BZoK4j95TfE7SD5hy\u002B\u002BMFy5846hCyyCZMDUpbugLFxABq75zPU3UDGoAaDchp7C0AHI6TDNyAaAszNRAOpnFHA2nREAjMTvHMVXB8cAAAAASUVORK5CYII=",
-              "WhenOpened": "2025-05-05T01:34:49.869Z",
+              "WhenOpened": "2025-05-07T02:33:21.928Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]

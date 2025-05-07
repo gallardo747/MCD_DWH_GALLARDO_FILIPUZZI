@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>TP_DWH_MCD_2025</Name>
-    <LastWriteTime>2025-05-05T01:55:03.9936613Z</LastWriteTime>
+    <LastWriteTime>2025-05-07T02:16:25.1158537Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -64,6 +64,46 @@
     <ProjectBuildItemInfo>
       <Name>TMP_Countries.dtsx</Name>
       <LastWriteTime>2025-05-05T01:55:03.9311604Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>STG_Categories.dtsx</Name>
+      <LastWriteTime>2025-05-06T03:32:04.3234916Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>STG_Regions.dtsx</Name>
+      <LastWriteTime>2025-05-07T01:30:44.8607941Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>STG_Shippers.dtsx</Name>
+      <LastWriteTime>2025-05-07T01:46:59.0135927Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>DWH_Categories.dtsx</Name>
+      <LastWriteTime>2025-05-07T01:55:53.8801054Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>DWH_Regions.dtsx</Name>
+      <LastWriteTime>2025-05-07T02:00:52.7480057Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>DWH_Shippers.dtsx</Name>
+      <LastWriteTime>2025-05-07T02:04:48.6644463Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>DWH_Territories.dtsx</Name>
+      <LastWriteTime>2025-05-07T02:17:05.9914058Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>STG_Territories.dtsx</Name>
+      <LastWriteTime>2025-05-07T02:31:05.8848961Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
